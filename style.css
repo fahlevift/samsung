@@ -166,15 +166,16 @@ img{
   padding: 0 16rem;
 }
 /* Header */
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
   height: 7rem;
   width: 100%;
-  z-index: var(--z-fixed);
+  z-index: var(--z-fixed); 
   transition: var(--tran-0-5);
 }
+
 
 .HomeZflipA{
   text-decoration: underline;
@@ -328,6 +329,7 @@ img{
   position: relative;
   height: 100vh;
   width: 100%;
+  z-index: var(--z-overlay);
 }
 .home .swiper-slide::before{
   content: '';
@@ -342,6 +344,7 @@ img{
 .home-img{
   height: 100%;
   width: 100%;
+  border-radius: 4px;
 }
 
 /* swiper button */
@@ -416,6 +419,7 @@ img{
 .about .content-title,
 .about .content-description{
   text-align: left;
+  z-index: var(--z-overlay);
 }
 .about-content{
   display: grid;
@@ -423,6 +427,7 @@ img{
   column-gap: 7rem;
   align-items: center;
   padding: 0 5rem;
+  z-index: var(--z-overlay);
 }
 .about-imageContent{
   position: relative;
@@ -741,6 +746,7 @@ img{
 
 /* Google Fonts Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 .product-card {
   position: relative;
   max-width: 355px;
@@ -751,6 +757,16 @@ img{
   z-index: 3;
   overflow: hidden;
 }
+
+.product-card:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+
 
 .product-card .logo-cart{
   display: flex;
